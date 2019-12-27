@@ -20,14 +20,14 @@ class DontTouchMe extends Component {
     goods = goods.concat(goods);
 
     return (
-      <div>
+      <div className='container'>
         <header>
           <h1>
             Don't Touch Me Goods
           </h1>
           <h4 className='description'>DM to Buy</h4>
-          <div className='goods'>{goods}</div>
         </header>
+        <div className='goods'>{goods}</div>
       </div>
     );
   };
