@@ -22,13 +22,11 @@ class DontTouchMe extends Component {
     return (
       <div>
         <header>
-          <h1>Don't Touch Me Goods</h1>
-          <h3>DM to Buy</h3>
-          <div className='goods'>
-          {
-            goods
-          }
-          </div>
+          <h1>
+            Don't Touch Me Goods
+          </h1>
+          <h4 className='description'>DM to Buy</h4>
+          <div className='goods'>{goods}</div>
         </header>
       </div>
     );
