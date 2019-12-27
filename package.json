@@ -1,5 +1,6 @@
 {
   "name": "dont-touch-me",
+  "homepage": "http://thegethighrecordclub.github.io/dont-touch-me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
