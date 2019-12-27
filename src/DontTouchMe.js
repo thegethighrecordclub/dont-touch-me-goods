@@ -1,0 +1,39 @@
+import React, { Component } from 'react';
+
+class DontTouchMe extends Component {
+
+  render() {
+    let goods = ['star', 'heart', 'circle', 'heart'];
+
+    goods = goods.map((shape, i) => (
+      <div className='item'>
+        <img
+          key={i}
+          className={'item-img '  }
+          alt='cute goods!'
+          src={'/dtm-' + i + '.jpg'}
+          style={{ WebkitMaskImage: 'url(' + shape + '.svg)' }}
+        />
+      </div>
+    ));
+    goods = goods.concat(goods);
+    goods = goods.concat(goods);
+
+    return (
+      <div>
+        <header>
+          <h1>Don't Touch Me Goods</h1>
+          <h3>DM to Buy</h3>
+          <div className='goods'>
+          {
+            goods
+          }
+          </div>
+        </header>
+      </div>
+    );
+  };
+}
+
+
+export default DontTouchMe;
