@@ -43,8 +43,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className='App' id='starshine'>
-        <div className='template shine'></div>
+      <div className='App'>
+        <div id='starshine'>
+          <div className='template shine'></div>
+        </div>
         <DontTouchMe />
       </div>
     );
