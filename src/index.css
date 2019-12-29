@@ -20,7 +20,9 @@ body {
 header {
   text-align: center;
   line-height: 2.5em;
-  background-image: linear-gradient(to left, violet, magenta, rgb(0, 102, 255), rgba(70, 255, 116), yellow, orange, red);   -webkit-background-clip: text;
+  background-image: linear-gradient(to left, violet, magenta, rgb(0, 102, 255), rgba(70, 255, 116), yellow, orange, red);
+  background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
  }
 
@@ -35,6 +37,20 @@ header {
   height: 29%;
   -webkit-filter: drop-shadow( -10px 15px 1px rgba(70, 255, 116, 0.7));
   filter: drop-shadow( -10px 15px 1px rgba(70, 255, 116, 0.7));
+}
+
+.item-overlay {
+  position: absolute;
+  height: 75%;
+  width: 75%;
+}
+
+.item-overlay.shine {
+  animation: glitter 2s linear 0s normal;
+  -webkit-animation: glitter 2s linear 0s normal;
+  -moz-animation: glitter 2s linear 0s normal;
+  -ms-animation: glitter 2s linear 0s normal;
+  -o-animation: glitter 2s linear 0s normal;
 }
 
 .item-img {
