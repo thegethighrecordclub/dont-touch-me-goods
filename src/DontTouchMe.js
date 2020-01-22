@@ -14,9 +14,11 @@ class DontTouchMe extends Component {
       <div className='container'>
         <header>
           <h1>Don't Touch Me Goods</h1>
-          <h4 className='description'>DM to Buy</h4>
         </header>
         <div className='goods'>{goods}</div>
+          <a href='?meow'>
+            <h4 className='description'>DM to Buy</h4>
+          </a>
       </div>
     );
   }
